@@ -25,7 +25,7 @@ const app = express();
 const PORT = process.env.PORT || 3050;
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URL || "mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_URL || "mongodb+srv://mdshafiuddinshajib_db_user:tWCWL63jCx2XUorK@cluster0.fxfvwbl.mongodb.net/?appName=Cluster0")
   .then(() => {
     console.log("Connected to MongoDB successfully");
   })
