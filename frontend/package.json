@@ -28,8 +28,7 @@
     "react-slick": "^0.30.1",
     "react-toastify": "^9.1.3",
     "slick-carousel": "^1.8.1",
-    "sslcommerz": "^1.7.0",
-    "sslcommerz-lts": "^1.1.0",
+  
     "swiper": "^11.0.5"
   },
   "devDependencies": {
