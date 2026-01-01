@@ -15,8 +15,8 @@ dotenv.config();
 const store_id = process.env.SSL_STORE_ID;
 const store_passwd = process.env.SSL_STORE_PASSWD;
 const is_live = process.env.NODE_ENV === 'production';
-const SERVER_URL = process.env.SERVER_URL || 'http://localhost:3050';
-const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
+const SERVER_URL = process.env.SERVER_URL ;
+const FRONTEND_URL = process.env.FRONTEND_URL;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -36,7 +36,7 @@ mongoose.connect(process.env.MONGO_URL || "mongodb+srv://mdshafiuddinshajib_db_u
 
 // CORS setup
 app.use(cors({
-  origin: [FRONTEND_URL, "http://localhost:5173"],
+  origin: [FRONTEND_URL],
   credentials: true,
 }));
 
