@@ -22,7 +22,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 3050;
+const PORT = process.env.PORT ;
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URL || "mongodb+srv://mdshafiuddinshajib_db_user:tWCWL63jCx2XUorK@cluster0.fxfvwbl.mongodb.net/?appName=Cluster0")
